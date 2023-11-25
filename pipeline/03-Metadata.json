@@ -76,23 +76,20 @@
 								},
 								"sink": {
 									"type": "SqlDWSink",
-									"writeBehavior": "Insert",
-									"sqlWriterUseTableLock": false
+									"allowCopyCommand": true
 								},
-								"enableStaging": false,
-								"translator": {
-									"type": "TabularTranslator",
-									"typeConversion": true,
-									"typeConversionSettings": {
-										"allowDataTruncation": true,
-										"treatBooleanAsNumber": false
-									}
-								}
+								"enableStaging": false
 							},
 							"inputs": [
 								{
 									"referenceName": "DimCustomerCSVCopy",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().Name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
