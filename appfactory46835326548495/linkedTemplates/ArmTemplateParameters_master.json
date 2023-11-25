@@ -11,6 +11,9 @@
 		"datalake546327284542_service2_accountKey": {
 			"value": ""
 		},
+		"dataworkspace3436282645_service_connectionString": {
+			"value": ""
+		},
 		"datalake546327284542_service_properties_typeProperties_url": {
 			"value": "https://datalake546327284542.dfs.core.windows.net/"
 		},
