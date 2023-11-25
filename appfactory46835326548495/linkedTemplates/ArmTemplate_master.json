@@ -11,7 +11,15 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'datalake546327284542_service'"
 		},
+		"datalake546327284542_service2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'datalake546327284542_service2'"
+		},
 		"datalake546327284542_service_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://datalake546327284542.dfs.core.windows.net/"
+		},
+		"datalake546327284542_service2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://datalake546327284542.dfs.core.windows.net/"
 		},
@@ -45,8 +53,14 @@
 					"datalake546327284542_service_accountKey": {
 						"value": "[parameters('datalake546327284542_service_accountKey')]"
 					},
+					"datalake546327284542_service2_accountKey": {
+						"value": "[parameters('datalake546327284542_service2_accountKey')]"
+					},
 					"datalake546327284542_service_properties_typeProperties_url": {
 						"value": "[parameters('datalake546327284542_service_properties_typeProperties_url')]"
+					},
+					"datalake546327284542_service2_properties_typeProperties_url": {
+						"value": "[parameters('datalake546327284542_service2_properties_typeProperties_url')]"
 					}
 				}
 			},

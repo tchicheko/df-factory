@@ -8,7 +8,13 @@
 		"datalake546327284542_service_accountKey": {
 			"value": ""
 		},
+		"datalake546327284542_service2_accountKey": {
+			"value": ""
+		},
 		"datalake546327284542_service_properties_typeProperties_url": {
+			"value": "https://datalake546327284542.dfs.core.windows.net/"
+		},
+		"datalake546327284542_service2_properties_typeProperties_url": {
 			"value": "https://datalake546327284542.dfs.core.windows.net/"
 		}
 	}
